@@ -4,6 +4,8 @@
 Список сотрудников сохраняется в localstorage.
 
 Использованные технологии: html, sass, js, react, webpack.
+
+![workers table](https://pp.userapi.com/c850232/v850232497/49961/Lnd8oxOxJpk.jpg)
 ## Для запуска проекта:
 Перейдите в папку dist и запустите index.html
 ## Для запуска webpack в режиме разработки:
