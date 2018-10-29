@@ -67,6 +67,7 @@ export default class App extends React.Component {
     }
 
     removeWorker = (data) => {
+        this.cleanChosen();
         for(let i = 0; i < this.state.workers.length; i++) {
             if(this.state.workers[i].id === data.id) {
                 let newArr = this.state.workers.slice(0, i);
@@ -79,11 +80,16 @@ export default class App extends React.Component {
             }
         }
     }
-    setInOrder = (value) => {
+
+    cleanChosen() {
         if(document.getElementsByClassName("chosen")[0] !== undefined) {
-            document.getElementsByClassName("chosen")[0].className = "oneWorker";
+            document.getElementsByClassName("chosen")[0].className = "main-block__table-list-worker";
             this.setOpenEditBox(false);
         }
+    }
+
+    setInOrder = (value) => {
+        this.cleanChosen();
 
         if(this.state.workersInOrder) {
             const workersArr = [];
