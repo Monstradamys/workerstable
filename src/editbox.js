@@ -9,7 +9,6 @@ export default class EditBox extends React.Component {
         this.nameRegEx = /^[a-zA-Z]{3,16}$/;
         this.occupationRegEx = /^[a-zA-Z]{3,16}$/;
     }
-    
     setIsEditFormOpen = () => {
         this.setState({
             isEditFormOpen: !this.state.isEditFormOpen,            
